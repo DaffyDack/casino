@@ -1,0 +1,136 @@
+$shiftColor: #e32645;
+$shiftHoverColor: darken($shiftColor, 5%);
+$shiftActiveColor: darken($shiftColor, 9%);
+
+$settingsColor: #26b72c;
+$settingsHoverColor: darken($settingsColor, 10%);
+$settingsActiveColor: darken($settingsColor, 20%);
+
+.clients-controls {
+  padding: 10px 15px 10px 15px;
+  border-bottom: 1px solid #d7d8dc;
+  .dark & {
+    border-bottom: 1px solid #3b4061;
+  }
+  // Little hack to fast fix buttons
+  & button {
+    color: white !important;
+    box-shadow: unset;
+    &:focus {
+      box-shadow: unset;
+    }
+    &:active {
+      box-shadow: unset;
+    }
+  }
+  & .p-button-label {
+    text-transform: uppercase;
+  }
+  & .p-button {
+    & svg {
+      margin-right: 15px;
+    }
+  }
+  &__no-shadow {
+    &:focus {
+      box-shadow: unset !important;
+    }
+    &:active {
+      box-shadow: unset !important;
+    }
+  }
+  &__blue {
+    margin-left: 10px;
+    background: #3575e6 !important;
+    .dark & {
+      color: white;
+    }
+    &:hover {
+      background: darken(#3575e6, 10%) !important;
+    }
+    &:active {
+      background: darken(#3575e6, 15%) !important;
+    }
+  }
+  &__black {
+    background: #171923 !important;
+    .dark & {
+      color: white;
+    }
+    &:hover {
+      background: darken(#171923, 10%) !important;
+    }
+    &:active {
+      background: darken(#171923, 15%) !important;
+    }
+  }
+  &__red {
+    background: $shiftColor !important;
+    border-color: $shiftColor !important;
+    outline-color: $shiftColor !important;
+    border: none;
+    box-shadow: unset;
+    .dark & {
+      color: white;
+    }
+    &:hover {
+      background: $shiftHoverColor !important;
+      box-shadow: unset !important;
+      outline: none;
+      border: none;
+    }
+    &:active {
+      background: $shiftActiveColor !important;
+      box-shadow: unset !important;
+      outline: none;
+      border: none;
+    }
+    &:focus {
+      box-shadow: unset !important;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__settings {
+    background: $settingsColor !important;
+    border-color: $settingsColor !important;
+    outline: none;
+    box-shadow: unset !important;
+    &:hover {
+      background: $settingsHoverColor !important;
+      outline: none;
+      box-shadow: unset;
+    }
+    &:active {
+      background: $settingsActiveColor !important;
+      outline: none;
+      box-shadow: unset;
+    }
+    &--active {
+      background: #171923 !important;
+      &:hover {
+        background: lighten(#171923, 10%) !important;
+      }
+      &:active {
+        background: lighten(#171923, 10%) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients-controls {
+    padding: 5px;
+  }
+}
+
+.clients-fade-enter-active,
+.clients-fade-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.clients-fade-enter-from,
+.clients-fade-leave-to {
+  opacity: 0;
+}

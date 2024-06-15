@@ -1,0 +1,17 @@
+<svg  viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Basketball-1s-200px 1" clip-path="url(#clip0_1_12)">
+<!--    <animateTransform attributeName="transform" attributeType="XML" type="translate" to="300 300" dur="2s" begin="0s" repeatCount="1" fill="freeze" ></animateTransform>-->
+    <path id="Vector" d="M100 194C152.467 194 195 151.691 195 99.5C195 47.3091 152.467 5 100 5C47.533 5 5 47.3091 5 99.5C5 151.691 47.533 194 100 194Z" fill="#DC4946" stroke="#B11904" stroke-width="11"/>
+    <g id="Vector_2">
+        <path d="M100 6V193Z" fill="black"/>
+        <path d="M100 6V193" stroke="#B11904" stroke-width="10"/>
+    </g>
+    <path id="Vector_3" d="M34 33C51.2878 50.6369 61 74.5577 61 99.5C61 124.442 51.2878 148.363 34 166" stroke="#B11904" stroke-width="10"/>
+    <path id="Vector_4" d="M166 33C148.712 50.6369 139 74.5577 139 99.5C139 124.442 148.712 148.363 166 166" stroke="#B11904" stroke-width="10"/>
+</g>
+<defs>
+    <clipPath id="clip0_1_12">
+        <rect width="200" height="200" fill="white"/>
+    </clipPath>
+</defs>
+</svg>

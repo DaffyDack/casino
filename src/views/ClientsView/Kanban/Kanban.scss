@@ -1,0 +1,74 @@
+.clients-kanban {
+  gap: 10px;
+  padding: 20px 15px 0 15px;
+  min-height: 100vh;
+  &__menu-item {
+    &:hover {
+      & .p-menuitem-text {
+        color: #3575e6;
+      }
+      & .clients-kanban {
+        &__pallete {
+          background: svg-load(
+              '../../assets/icons/color-pallete.svg',
+              fill=#3575E6
+            )
+            no-repeat center center;
+        }
+        &__pen {
+          background: svg-load('../../assets/icons/pen.svg', fill=#3575E6)
+            no-repeat center center;
+        }
+        &__select {
+          background: svg-load('../../assets/icons/select.svg', stroke=#3575E6)
+            no-repeat center center;
+        }
+      }
+    }
+  }
+  &__pallete {
+    background: svg-load('../../assets/icons/color-pallete.svg', fill=#000)
+      no-repeat center center;
+    height: 20px;
+    width: 20px;
+  }
+  &__pen {
+    background: svg-load('../../assets/icons/pen.svg', fill=#000) no-repeat
+      center center;
+    height: 20px;
+    width: 20px;
+  }
+  &__select {
+    background: svg-load('../../assets/icons/select.svg', stroke=#000) no-repeat
+      center center;
+    height: 20px;
+    width: 20px;
+  }
+
+  &__additional {
+    cursor: pointer;
+    color: white;
+    &:hover {
+      color: darken(white, 10%);
+    }
+  }
+  &__column {
+    min-width: 200px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+  }
+  &__h1 {
+    width: 80%;
+    min-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  }
+}

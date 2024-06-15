@@ -1,0 +1,40 @@
+.kanban-card {
+  border: solid 1px #3575e6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+  user-select: none;
+  max-width: 200px;
+  &:first-child {
+    margin-top: 0;
+    border-radius: 0px 0px 5px 5px;
+  }
+  &__stage {
+    margin-top: 2px;
+    color: #3575e6;
+  }
+  &__group {
+    margin-top: 5px;
+  }
+  &__name {
+    color: #74757b;
+  }
+  &__value {
+    color: #171923;
+    font-size: 0.9 rem;
+  }
+  // Dark mode
+  .dark & {
+    background-color: #232637;
+    &__name {
+      color: #9d9db7;
+    }
+    &__value {
+      color: #ffffff;
+    }
+    &__deal {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import './normalize.css';
+@import './fonts.scss';
+@import './base.scss';
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.scrollbar {
+  margin-right: 4px;
+  padding-right: 4px;
+  scrollbar-gutter: stable;
+  &::-webkit-scrollbar {
+    width: 4px;
+    &-track {
+      border-radius: 10px;
+      background-color: #ffffff11;
+    }
+    &-thumb {
+      background-color: #3575e6;
+      border-radius: 20px;
+      background-clip: content-box;
+      &:hover {
+        background-color: #0c46aa;
+      }
+    }
+  }
+}
+
+.scrollbar-alternative::-webkit-scrollbar-track {
+  background-color: #00000011;
+}
+
+// TODO: Dark mode for scrollbar
+.dark .scrollbar-alternative::-webkit-scrollbar-track {
+  background-color: #ffffff11;
+}
+
+.scrollbar-white {
+  &::-webkit-scrollbar {
+    &-track {
+      background-color: #ffffff33;
+    }
+    &-thumb {
+      background-color: #cccccc;
+    }
+  }
+}
+.tippy-box {
+  background-color: #3575e6;
+}
+
+.tippy-arrow {
+  color: #3575e6;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+@tailwind base;
+@tailwind utilities;
